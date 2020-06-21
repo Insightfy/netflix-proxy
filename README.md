@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/ab77/netflix-proxy.svg?branch=master)](https://travis-ci.org/ab77/netflix-proxy) [![Docker Pulls](https://img.shields.io/docker/pulls/ab77/sniproxy.svg?maxAge=2592000)](https://hub.docker.com/r/ab77/sniproxy/) [![Docker Stars](https://img.shields.io/docker/stars/ab77/sniproxy.svg?maxAge=2592000)](https://hub.docker.com/r/ab77/sniproxy/)
 
 > `TL;DR`
-
+支持树莓派等ARM设备
 find a (recent)[n19](https://github.com/ab77/netflix-proxy#footnotes) Debian or Ubuntu box with root on a clean public IP and run:
 
     apt-get update\
@@ -9,7 +9,7 @@ find a (recent)[n19](https://github.com/ab77/netflix-proxy#footnotes) Debian or 
 	  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
 	  && mkdir -p ~/netflix-proxy\
 	  && cd ~/netflix-proxy\
-	  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
+	  && curl -fsSL https://github.com/insightfy/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
 	  && ./build.sh
 
 See the [**Wiki**](https://github.com/ab77/netflix-proxy/wiki) page(s) for some common troubleshooting ideas.
