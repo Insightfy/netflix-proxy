@@ -50,7 +50,7 @@ if [ ${b} ]; then DOCKER_BUILD=${b}; fi
 if [ ${c} ]; then CLIENTIP=${c}; fi
 
 log_action_begin_msg "checking OS compatibility"
-if [[ $(cat /etc/os-release | grep '^ID=') =~ ubuntu ]]\
+if [[ $(cat /etc/os-release | grep '^ID=') =~ raspbian ]]\
   || [[ $(cat /etc/os-release | grep '^ID=') =~ debian ]]; then
     true
     log_action_end_msg $?
